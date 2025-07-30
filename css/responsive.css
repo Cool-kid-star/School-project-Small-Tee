@@ -1,0 +1,832 @@
+/* 
+   Responsive Styles for Cape Town Holocaust & Genocide Centre Website
+   The Webpage Project by Small Tee
+   Created by T.E.A fussion
+*/
+
+/* ===== TABLET STYLES (768px and below) ===== */
+@media (max-width: 768px) {
+  /* Typography adjustments */
+  :root {
+    --text-5xl: 2.5rem;
+    --text-6xl: 3rem;
+    --space-16: 3rem;
+    --space-20: 4rem;
+    --space-24: 5rem;
+    --space-32: 6rem;
+  }
+
+  /* Container padding */
+  .container {
+    padding: 0 var(--space-4);
+  }
+
+  /* Navigation */
+  .nav-menu {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: var(--space-8) 0;
+    gap: var(--space-6);
+    transition: left var(--transition-normal);
+    z-index: var(--z-fixed);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-toggle.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .nav-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  /* Hero section */
+  .hero-title {
+    font-size: var(--text-5xl);
+  }
+
+  .hero-description {
+    font-size: var(--text-lg);
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  /* Page header */
+  .page-header {
+    padding: var(--space-24) 0 var(--space-16) 0;
+  }
+
+  .page-title {
+    font-size: var(--text-5xl);
+  }
+
+  .page-subtitle {
+    font-size: var(--text-lg);
+  }
+
+  /* Grid layouts */
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .programs-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .events-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .visit-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .types-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+
+  .resources-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+
+  /* Two-column layouts */
+  .mission-content,
+  .archives-content,
+  .tours-content,
+  .training-content,
+  .overview-content,
+  .media-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .mission-content .mission-image,
+  .archives-content .archives-image,
+  .tours-content .tours-image,
+  .training-content .training-image,
+  .overview-content .overview-image,
+  .media-content .media-image {
+    order: -1;
+  }
+
+  /* Contact grid */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  /* Form adjustments */
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .newsletter-form .form-group {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  /* Statistics */
+  .impact-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+
+  .overview-stats {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  /* Archives features */
+  .archives-features {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  /* Accessibility features */
+  .accessibility-features {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  /* Footer */
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  /* Event items */
+  .event-item {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-4);
+  }
+
+  .event-date-small {
+    align-self: center;
+  }
+
+  /* Timeline adjustments */
+  .history-timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    padding-left: var(--space-16);
+  }
+
+  .timeline-marker {
+    left: 12px;
+  }
+
+  /* Button adjustments */
+  .btn {
+    padding: var(--space-3) var(--space-5);
+  }
+
+  .btn-small {
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--text-xs);
+  }
+
+  /* Program actions */
+  .program-actions,
+  .event-actions,
+  .training-actions {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .program-actions .btn,
+  .event-actions .btn,
+  .training-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ===== MOBILE STYLES (480px and below) ===== */
+@media (max-width: 480px) {
+  /* Typography adjustments */
+  :root {
+    --text-4xl: 1.8rem;
+    --text-5xl: 2.2rem;
+    --text-6xl: 2.5rem;
+    --container-padding: var(--space-3);
+    --space-16: 2.5rem;
+    --space-20: 3rem;
+    --space-24: 4rem;
+    --space-32: 5rem;
+  }
+
+  /* Container */
+  .container {
+    padding: 0 var(--container-padding);
+  }
+
+  /* Navigation brand */
+  .brand-title {
+    font-size: var(--text-xl);
+  }
+
+  .brand-subtitle {
+    font-size: 0.7rem;
+  }
+
+  /* Hero adjustments */
+  .hero-content {
+    padding: var(--space-16) 0;
+  }
+
+  .hero-title {
+    font-size: var(--text-4xl);
+    line-height: 1.1;
+  }
+
+  .hero-description {
+    font-size: var(--text-base);
+  }
+
+  /* Page header */
+  .page-header {
+    padding: var(--space-20) 0 var(--space-12) 0;
+  }
+
+  .page-title {
+    font-size: var(--text-4xl);
+    line-height: 1.1;
+  }
+
+  .page-subtitle {
+    font-size: var(--text-base);
+  }
+
+  /* Section spacing */
+  .featured-sections,
+  .programs,
+  .mission,
+  .history,
+  .impact,
+  .archives,
+  .newsletter,
+  .contact-info,
+  .visit-info,
+  .tours,
+  .exhibitions,
+  .accessibility,
+  .featured-events,
+  .upcoming-events,
+  .event-types,
+  .education-overview,
+  .teacher-training,
+  .resources,
+  .map-section,
+  .media {
+    padding: var(--space-16) 0;
+  }
+
+  /* Section titles */
+  .section-title {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-8);
+  }
+
+  /* Card adjustments */
+  .feature-card,
+  .program-card,
+  .event-card,
+  .exhibition-card,
+  .info-card {
+    margin-bottom: var(--space-4);
+  }
+
+  .card-content,
+  .program-content,
+  .event-content,
+  .exhibition-content {
+    padding: var(--space-4);
+  }
+
+  /* Image heights */
+  .card-image,
+  .program-image,
+  .event-image,
+  .exhibition-image {
+    height: 180px;
+  }
+
+  /* Statistics grid */
+  .impact-stats {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+    text-align: center;
+  }
+
+  .stat-number {
+    font-size: var(--text-4xl);
+  }
+
+  .stat-label {
+    font-size: var(--text-base);
+  }
+
+  /* Mission values */
+  .mission-values {
+    gap: var(--space-4);
+  }
+
+  .value-item {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-3);
+  }
+
+  .value-item i {
+    margin-top: 0;
+  }
+
+  /* Timeline adjustments */
+  .timeline-item {
+    padding-left: var(--space-12);
+  }
+
+  .timeline-content {
+    padding: var(--space-4);
+  }
+
+  .timeline-title {
+    font-size: var(--text-lg);
+  }
+
+  /* Forms */
+  .contact-form-container {
+    padding: var(--space-6);
+  }
+
+  .contact-item {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-3);
+  }
+
+  .contact-icon {
+    align-self: center;
+  }
+
+  /* Hours display */
+  .hours-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-1);
+  }
+
+  /* Tour types */
+  .tour-types {
+    gap: var(--space-4);
+  }
+
+  .tour-type {
+    padding: var(--space-3);
+  }
+
+  /* Grid layouts - single column */
+  .types-grid,
+  .resources-grid,
+  .accessibility-features {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  /* Event details */
+  .event-details {
+    padding: var(--space-3);
+  }
+
+  .detail-item {
+    font-size: var(--text-xs);
+  }
+
+  /* Program features */
+  .program-features .feature-item {
+    font-size: var(--text-sm);
+  }
+
+  /* Archive features adjustment */
+  .feature-item {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-2);
+  }
+
+  .feature-item i {
+    align-self: center;
+  }
+
+  /* Icon sizes */
+  .info-icon,
+  .program-icon,
+  .type-icon,
+  .resource-icon {
+    width: 50px;
+    height: 50px;
+    font-size: var(--text-lg);
+  }
+
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Training highlights */
+  .training-highlights li {
+    padding-left: var(--space-4);
+    font-size: var(--text-sm);
+  }
+
+  /* Newsletter */
+  .newsletter-content {
+    padding: 0 var(--space-2);
+  }
+
+  .newsletter-title {
+    font-size: var(--text-3xl);
+  }
+
+  /* Footer adjustments */
+  .footer {
+    padding: var(--space-16) 0 var(--space-6) 0;
+  }
+
+  .footer-title {
+    font-size: var(--text-lg);
+  }
+
+  .footer-column-title {
+    font-size: var(--text-base);
+  }
+
+  /* Map placeholder */
+  .map-placeholder {
+    height: 300px;
+  }
+
+  .map-content h3 {
+    font-size: var(--text-lg);
+  }
+
+  .map-content i {
+    font-size: var(--text-3xl);
+  }
+
+  /* Media contact */
+  .media-contact {
+    padding: var(--space-4);
+  }
+
+  /* Checkbox adjustments */
+  .checkbox-group {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .checkbox-label {
+    font-size: var(--text-sm);
+  }
+}
+
+/* ===== SMALL MOBILE STYLES (360px and below) ===== */
+@media (max-width: 360px) {
+  /* Further typography adjustments */
+  :root {
+    --text-3xl: 1.5rem;
+    --text-4xl: 1.6rem;
+    --text-5xl: 2rem;
+    --text-6xl: 2.2rem;
+    --container-padding: var(--space-2);
+  }
+
+  /* Container */
+  .container {
+    padding: 0 var(--container-padding);
+  }
+
+  /* Navigation */
+  .nav-container {
+    padding: 0 var(--space-2);
+  }
+
+  .brand-title {
+    font-size: var(--text-lg);
+  }
+
+  .brand-subtitle {
+    font-size: 0.65rem;
+  }
+
+  /* Hero */
+  .hero-title {
+    font-size: var(--text-3xl);
+  }
+
+  /* Page header */
+  .page-title {
+    font-size: var(--text-3xl);
+  }
+
+  /* Section titles */
+  .section-title {
+    font-size: var(--text-2xl);
+  }
+
+  /* Cards */
+  .card-content,
+  .program-content,
+  .event-content,
+  .exhibition-content {
+    padding: var(--space-3);
+  }
+
+  /* Forms */
+  .contact-form-container {
+    padding: var(--space-4);
+  }
+
+  /* Buttons */
+  .btn {
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--text-sm);
+  }
+
+  /* Icons */
+  .info-icon,
+  .program-icon,
+  .type-icon,
+  .resource-icon {
+    width: 40px;
+    height: 40px;
+    font-size: var(--text-base);
+  }
+
+  /* Timeline */
+  .timeline-item {
+    padding-left: var(--space-10);
+  }
+
+  .timeline-content {
+    padding: var(--space-3);
+  }
+
+  /* Event items */
+  .event-item {
+    padding: var(--space-4);
+  }
+
+  .event-date-small {
+    min-width: 60px;
+    padding: var(--space-2);
+  }
+
+  .date-day {
+    font-size: var(--text-xl);
+  }
+
+  /* Statistics */
+  .stat-number {
+    font-size: var(--text-3xl);
+  }
+}
+
+/* ===== LANDSCAPE MOBILE ADJUSTMENTS ===== */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    min-height: 70vh;
+  }
+
+  .hero-content {
+    padding: var(--space-12) 0;
+  }
+
+  .hero-title {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-4);
+  }
+
+  .hero-description {
+    margin-bottom: var(--space-6);
+  }
+
+  .hero-buttons {
+    margin-bottom: var(--space-6);
+  }
+
+  .scroll-indicator {
+    bottom: var(--space-4);
+  }
+
+  .page-header {
+    padding: var(--space-16) 0 var(--space-8) 0;
+  }
+}
+
+/* ===== LARGE DESKTOP STYLES (1200px and above) ===== */
+@media (min-width: 1200px) {
+  :root {
+    --container-max-width: 1400px;
+  }
+
+  .featured-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .impact-stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .types-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .resources-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-12);
+  }
+}
+
+/* ===== EXTRA LARGE DESKTOP STYLES (1600px and above) ===== */
+@media (min-width: 1600px) {
+  :root {
+    --container-max-width: 1600px;
+    --text-6xl: 4.5rem;
+    --text-5xl: 3.5rem;
+  }
+
+  .hero-title {
+    font-size: var(--text-6xl);
+  }
+
+  .page-title {
+    font-size: var(--text-6xl);
+  }
+}
+
+/* ===== ACCESSIBILITY IMPROVEMENTS ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .hero-background::before {
+    animation: none;
+  }
+
+  .scroll-indicator {
+    animation: none;
+  }
+
+  .btn::before {
+    transition: none;
+  }
+}
+
+/* ===== HIGH CONTRAST MODE ===== */
+@media (prefers-contrast: high) {
+  :root {
+    --primary-color: hsl(220, 100%, 20%);
+    --secondary-color: hsl(45, 100%, 50%);
+    --accent-color: hsl(15, 100%, 40%);
+    --gray-700: hsl(0, 0%, 20%);
+    --gray-800: hsl(0, 0%, 10%);
+    --gray-900: hsl(0, 0%, 5%);
+  }
+
+  .btn {
+    border: 2px solid currentColor;
+  }
+
+  .card,
+  .feature-card,
+  .program-card,
+  .event-card {
+    border: 1px solid var(--gray-300);
+  }
+}
+
+/* ===== TOUCH DEVICE IMPROVEMENTS ===== */
+@media (hover: none) and (pointer: coarse) {
+  .btn,
+  .nav-link,
+  .card-link {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .feature-card:hover,
+  .program-card:hover,
+  .event-card:hover {
+    transform: none;
+  }
+
+  .card-link:hover {
+    gap: var(--space-2);
+  }
+}
+
+/* ===== PRINT MEDIA QUERIES ===== */
+@media print {
+  @page {
+    margin: 1in;
+  }
+
+  .container {
+    max-width: none;
+    padding: 0;
+  }
+
+  .featured-grid,
+  .programs-grid,
+  .events-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+  }
+
+  .mission-content,
+  .archives-content,
+  .tours-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .page-header {
+    margin-top: 0;
+    padding: var(--space-8) 0;
+  }
+
+  .section {
+    padding: var(--space-8) 0;
+  }
+
+  .card,
+  .feature-card,
+  .program-card {
+    box-shadow: none;
+    border: 1px solid var(--gray-300);
+    break-inside: avoid;
+  }
+}

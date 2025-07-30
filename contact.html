@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Cape Town Holocaust & Genocide Centre</title>
+    <meta name="description" content="Get in touch with the Cape Town Holocaust & Genocide Centre. Find our contact information, location, and reach out for inquiries about visits, education programs, and events.">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <h1 class="brand-title">CTHGC</h1>
+                    <span class="brand-subtitle">The Webpage Project by Small Tee</span>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" data-testid="link-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link" data-testid="link-about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="visit.html" class="nav-link" data-testid="link-visit">Visit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="education.html" class="nav-link" data-testid="link-education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="events.html" class="nav-link" data-testid="link-events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active" data-testid="link-contact">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-toggle" id="nav-toggle" data-testid="button-menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-testid="text-page-title">Contact Us</h1>
+            <p class="page-subtitle" data-testid="text-page-subtitle">
+                Get in touch with us for inquiries, bookings, and information
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info" id="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Details -->
+                <div class="contact-details">
+                    <h2 class="section-title" data-testid="text-contact-title">Get In Touch</h2>
+                    <p class="contact-intro" data-testid="text-contact-intro">
+                        We're here to help with any questions about our exhibitions, educational programs, events, or visiting information.
+                    </p>
+                    
+                    <div class="contact-item" data-testid="card-contact-address">
+                        <div class="contact-icon">
+                            <i data-feather="map-pin"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Address</h4>
+                            <address>
+                                88 Hatfield Street<br>
+                                Gardens, Cape Town<br>
+                                8001, South Africa
+                            </address>
+                        </div>
+                    </div>
+
+                    <div class="contact-item" data-testid="card-contact-phone">
+                        <div class="contact-icon">
+                            <i data-feather="phone"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Phone</h4>
+                            <a href="tel:+27214625553" data-testid="link-phone">+27 21 462 5553</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item" data-testid="card-contact-email">
+                        <div class="contact-icon">
+                            <i data-feather="mail"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Email</h4>
+                            <a href="mailto:admin@holocaust.org.za" data-testid="link-email">admin@holocaust.org.za</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item" data-testid="card-contact-hours">
+                        <div class="contact-icon">
+                            <i data-feather="clock"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Opening Hours</h4>
+                            <div class="hours-list">
+                                <div class="hours-item">
+                                    <span>Monday - Friday:</span>
+                                    <span>9:00 AM - 4:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span>Saturday:</span>
+                                    <span>10:00 AM - 3:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span>Sunday:</span>
+                                    <span>10:00 AM - 2:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form" data-testid="form-contact">
+                        <h3 class="form-title" data-testid="text-form-title">Send us a Message</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name" data-testid="label-name">Name *</label>
+                                <input type="text" 
+                                       id="contact-name" 
+                                       name="name" 
+                                       required 
+                                       data-testid="input-name">
+                                <div class="error-message" data-testid="error-name"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact-email" data-testid="label-email">Email *</label>
+                                <input type="email" 
+                                       id="contact-email" 
+                                       name="email" 
+                                       required 
+                                       data-testid="input-email">
+                                <div class="error-message" data-testid="error-email"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-phone" data-testid="label-phone">Phone Number</label>
+                            <input type="tel" 
+                                   id="contact-phone" 
+                                   name="phone" 
+                                   data-testid="input-phone">
+                            <div class="error-message" data-testid="error-phone"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject" data-testid="label-subject">Subject *</label>
+                            <select id="contact-subject" 
+                                    name="subject" 
+                                    required 
+                                    data-testid="select-subject">
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="visit">Plan a Visit</option>
+                                <option value="education">Educational Programs</option>
+                                <option value="events">Events</option>
+                                <option value="media">Media Inquiry</option>
+                                <option value="archives">Archive Access</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="error-message" data-testid="error-subject"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message" data-testid="label-message">Message *</label>
+                            <textarea id="contact-message" 
+                                      name="message" 
+                                      rows="6" 
+                                      required 
+                                      placeholder="Please provide details about your inquiry..."
+                                      data-testid="textarea-message"></textarea>
+                            <div class="error-message" data-testid="error-message"></div>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" 
+                                       id="contact-newsletter" 
+                                       name="newsletter"
+                                       data-testid="checkbox-newsletter">
+                                <span class="checkmark"></span>
+                                I would like to receive updates about events and programs
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full" data-testid="button-submit">
+                            <i data-feather="send"></i>
+                            Send Message
+                        </button>
+
+                        <div class="form-message" id="contact-form-message" data-testid="text-form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter" id="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title" data-testid="text-newsletter-title">Stay Connected</h2>
+                <p class="newsletter-description" data-testid="text-newsletter-description">
+                    Subscribe to our newsletter for updates on exhibitions, events, and educational programs.
+                </p>
+                
+                <form class="newsletter-form" id="newsletter-form" data-testid="form-newsletter">
+                    <div class="form-group">
+                        <input type="email" 
+                               id="newsletter-email" 
+                               name="email" 
+                               placeholder="Enter your email address" 
+                               required 
+                               data-testid="input-newsletter-email">
+                        <button type="submit" class="btn btn-primary" data-testid="button-newsletter-submit">
+                            <i data-feather="send"></i>
+                            Subscribe
+                        </button>
+                    </div>
+                    <div class="form-message" id="newsletter-message" data-testid="text-newsletter-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Section -->
+    <section class="media" id="media">
+        <div class="container">
+            <h2 class="section-title" data-testid="text-media-title">Media Inquiries</h2>
+            <div class="media-content">
+                <div class="media-text">
+                    <p class="media-description" data-testid="text-media-description">
+                        For media inquiries, interviews, and press releases, please contact our communications team. We welcome opportunities to share our mission and work with journalists, bloggers, and media outlets.
+                    </p>
+                    <div class="media-contact">
+                        <h4>Media Contact:</h4>
+                        <p>Email: <a href="mailto:media@holocaust.org.za" data-testid="link-media-email">media@holocaust.org.za</a></p>
+                        <p>Phone: <a href="tel:+27214625553" data-testid="link-media-phone">+27 21 462 5553</a></p>
+                    </div>
+                </div>
+                <div class="media-image">
+                    <img src="https://ctholocaust.co.za/wp-content/uploads/2020/08/Community-Home-Page-1.png.webp" 
+                         alt="Community and Media Relations" 
+                         data-testid="img-media">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" id="map">
+        <div class="container">
+            <h2 class="section-title" data-testid="text-map-title">Find Us</h2>
+            <div class="map-container">
+                <div class="map-placeholder" data-testid="div-map-placeholder">
+                    <div class="map-content">
+                        <i data-feather="map-pin"></i>
+                        <h3>Cape Town Holocaust & Genocide Centre</h3>
+                        <p>88 Hatfield Street, Gardens, Cape Town</p>
+                        <a href="https://www.google.com/maps/search/88+Hatfield+Street+Gardens+Cape+Town" 
+                           class="btn btn-outline" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           data-testid="button-directions">
+                            <i data-feather="navigation"></i>
+                            Get Directions
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="map-info">
+                <div class="map-note" data-testid="card-map-note">
+                    <i data-feather="info"></i>
+                    <p>We are located on the Red Route City Sightseeing bus tour. Parking is available nearby.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <h3 class="footer-title" data-testid="text-footer-title">Cape Town Holocaust & Genocide Centre</h3>
+                        <p class="footer-description" data-testid="text-footer-description">
+                            Creating a more caring and just society in which human rights and diversity are respected and valued.
+                        </p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4 class="footer-column-title" data-testid="text-footer-visit">Visit</h4>
+                            <ul class="footer-list">
+                                <li><a href="visit.html" data-testid="link-footer-hours">Opening Hours</a></li>
+                                <li><a href="visit.html#location" data-testid="link-footer-location">Location</a></li>
+                                <li><a href="visit.html#tours" data-testid="link-footer-tours">Guided Tours</a></li>
+                                <li><a href="visit.html#accessibility" data-testid="link-footer-accessibility">Accessibility</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4 class="footer-column-title" data-testid="text-footer-learn">Learn</h4>
+                            <ul class="footer-list">
+                                <li><a href="education.html" data-testid="link-footer-education">Education Programs</a></li>
+                                <li><a href="education.html#resources" data-testid="link-footer-resources">Resources</a></li>
+                                <li><a href="education.html#teacher-training" data-testid="link-footer-training">Teacher Training</a></li>
+                                <li><a href="about.html#archives" data-testid="link-footer-archives">Archives</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4 class="footer-column-title" data-testid="text-footer-connect">Connect</h4>
+                            <ul class="footer-list">
+                                <li><a href="events.html" data-testid="link-footer-events">Events</a></li>
+                                <li><a href="contact.html" data-testid="link-footer-contact">Contact Us</a></li>
+                                <li><a href="contact.html#newsletter" data-testid="link-footer-newsletter">Newsletter</a></li>
+                                <li><a href="contact.html#media" data-testid="link-footer-media">Media</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-credits">
+                        <p data-testid="text-footer-copyright">&copy; 2025 Cape Town Holocaust & Genocide Centre. All rights reserved.</p>
+                        <p class="project-credit" data-testid="text-footer-project">The Webpage Project by Small Tee</p>
+                        <p class="developer-credit" data-testid="text-footer-developer">T.E.A fussion made this</p>
+                        <p class="youtube-channel" data-testid="text-footer-youtube">
+                            <a href="https://www.youtube.com/@T.E.AFusionMusic" target="_blank" rel="noopener noreferrer" data-testid="link-footer-youtube">
+                                <i data-feather="youtube"></i> T.E.A Fusion Music
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+    
+    <script>
+        feather.replace();
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeNavigation();
+            initializeScrollEffects();
+            initializeForms();
+        });
+    </script>
+</body>
+</html>

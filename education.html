@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | Cape Town Holocaust & Genocide Centre</title>
+    <meta name="description" content="Explore our comprehensive educational programs, teacher training, and resources designed to promote human rights education and genocide prevention.">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <h1 class="brand-title">CTHGC</h1>
+                    <span class="brand-subtitle">The Webpage Project by Small Tee</span>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" data-testid="link-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link" data-testid="link-about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="visit.html" class="nav-link" data-testid="link-visit">Visit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="education.html" class="nav-link active" data-testid="link-education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="events.html" class="nav-link" data-testid="link-events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link" data-testid="link-contact">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-toggle" id="nav-toggle" data-testid="button-menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-testid="text-page-title">Education</h1>
+            <p class="page-subtitle" data-testid="text-page-subtitle">
+                Promoting human rights education and genocide prevention through comprehensive programs
+            </p>
+        </div>
+    </section>
+
+    <!-- Education Overview -->
+    <section class="education-overview" id="overview">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2 class="section-title" data-testid="text-overview-title">Our Educational Mission</h2>
+                    <p class="overview-description" data-testid="text-overview-description">
+                        Through innovative educational programs, we empower students, educators, and communities to understand the importance of human rights, recognize the dangers of prejudice, and become active participants in building a more just society.
+                    </p>
+                    <div class="overview-stats">
+                        <div class="stat-item" data-testid="card-stat-schools">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Schools Reached</div>
+                        </div>
+                        <div class="stat-item" data-testid="card-stat-educators">
+                            <div class="stat-number">2,000+</div>
+                            <div class="stat-label">Educators Trained</div>
+                        </div>
+                        <div class="stat-item" data-testid="card-stat-learners">
+                            <div class="stat-number">100,000+</div>
+                            <div class="stat-label">Learners Impacted</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="overview-image">
+                    <img src="https://ctholocaust.co.za/wp-content/uploads/2020/06/Education-Cape-Town-Holocaust-Genocide-Centre.png.webp" 
+                         alt="Education at Cape Town Holocaust Genocide Centre" 
+                         data-testid="img-overview">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs" id="programs">
+        <div class="container">
+            <h2 class="section-title" data-testid="text-programs-title">Educational Programs</h2>
+            
+            <div class="programs-grid">
+                <!-- School Programs -->
+                <article class="program-card" data-testid="card-program-school">
+                    <div class="program-icon">
+                        <i data-feather="users"></i>
+                    </div>
+                    <h3 class="program-title" data-testid="text-program-title-school">School Programs</h3>
+                    <p class="program-description" data-testid="text-program-description-school">
+                        Age-appropriate programs for learners from Grade 4 to Grade 12, including guided tours, workshops, and interactive sessions that promote critical thinking about human rights and social justice.
+                    </p>
+                    <div class="program-features">
+                        <div class="feature-item">
+                            <i data-feather="check"></i>
+                            <span>Curriculum-aligned content</span>
+                        </div>
+                        <div class="feature-item">
+                            <i data-feather="check"></i>
+                            <span>Interactive learning experiences</span>
+                        </div>
+                        <div class="feature-item">
+                            <i data-feather="check"></i>
+                            <span>Pre and post-visit resources</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-outline" data-testid="button-school-program">
+                        <i data-feather="calendar"></i>
+                        Book School Visit
+                    </a>
+                </article>
+
+                <!-- Teacher Training -->
+                <article class="program-card featured" data-testid="card-program-teacher">
+                    <div class="program-icon">
+                        <i data-feather="award"></i>
+                    </div>
+                    <h3 class="program-title" data-testid="text-program-title-teacher">Teacher Training</h3>
+                    <p class="program-description" data-testid="text-program-description-teacher">
+                        Comprehensive professional development programs for educators, including our flagship Residential Educator Training Programme and ongoing workshops on Holocaust and genocide education.
+                    </p>
+                    <div class="program-features">
+                        <div class="feature-item">
+                            <i data-feather="check"></i>
+                            <span>International best practices</span>
+                        </div>
+                        <div class="feature-item">
+                            <i data-feather="check"></i>
+                            <span>Certification programs</span>
+                        </div>
+                        <div class="feature-item">
+                            <i data-feather="check"></i>
+                            <span>Ongoing support network</span>
+                        </div>
+                    </div>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0b1v8U30Yir3z9dvMTne2GRynYXNmUpSjWWEe8ND7vByQCg/viewform" 
+                       class="btn btn-primary" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       data-testid="button-teacher-training">
+                        <i data-feather="external-link"></i>
+                        Apply for Training
+                    </a>
+                </article>
+
+                <!-- Community Programs -->
+                <article class="program-card" data-testid="card-program-community">
+                    <div class="program-icon">
+                        <i data-feather="home"></i>
+                    </div>
+                    <h3 class="program-title" data-testid="text-program-title-community">Community Programs</h3>
+                    <p class="program-description" data-testid="text-program-description-community">
+                        Outreach programs that engage local communities, religious groups, and civil society organizations in conversations about tolerance, diversity, and human rights.
+                    </p>
+                    <div class="program-features">
+                        <div class="feature-item">
+                            <i data-feather="check"></i>
+                            <span>Mobile exhibitions</span>
+                        </div>
+                        <div class="feature-item">
+                            <i data-feather="check"></i>
+                            <span>Community workshops</span>
+                        </div>
+                        <div class="feature-item">
+                            <i data-feather="check"></i>
+                            <span>Interfaith dialogue</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-outline" data-testid="button-community-program">
+                        <i data-feather="phone"></i>
+                        Contact Us
+                    </a>
+                </article>
+
+                <!-- Online Learning -->
+                <article class="program-card" data-testid="card-program-online">
+                    <div class="program-icon">
+                        <i data-feather="monitor"></i>
+                    </div>
+                    <h3 class="program-title" data-testid="text-program-title-online">Online Learning</h3>
+                    <p class="program-description" data-testid="text-program-description-online">
+                        Digital resources and virtual programs that extend our reach beyond Cape Town, making our educational content accessible to learners and educators across Southern Africa and beyond.
+                    </p>
+                    <div class="program-features">
+                        <div class="feature-item">
+                            <i data-feather="check"></i>
+                            <span>Virtual tours</span>
+                        </div>
+                        <div class="feature-item">
+                            <i data-feather="check"></i>
+                            <span>Online workshops</span>
+                        </div>
+                        <div class="feature-item">
+                            <i data-feather="check"></i>
+                            <span>Digital resources</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn btn-outline" data-testid="button-online-program">
+                        <i data-feather="play"></i>
+                        Explore Online
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teacher Training Highlight -->
+    <section class="teacher-training" id="teacher-training">
+        <div class="container">
+            <div class="training-content">
+                <div class="training-image">
+                    <img src="https://ctholocaust.co.za/wp-content/uploads/2025/02/CTHGC-Teacher-training-July-2025-Poster-header-1024x701.jpg" 
+                         alt="Residential Educator Training Programme 2025" 
+                         data-testid="img-teacher-training">
+                </div>
+                <div class="training-text">
+                    <h2 class="section-title" data-testid="text-training-title">Residential Educator Training Programme 2025</h2>
+                    <p class="training-date" data-testid="text-training-date">July 13-18, 2025 | Cape Town</p>
+                    <p class="training-description" data-testid="text-training-description">
+                        Join high school history educators from across Southern Africa and beyond for an intensive week of professional development focused on Holocaust and genocide education. This comprehensive program combines academic learning with practical teaching strategies.
+                    </p>
+                    
+                    <div class="training-highlights">
+                        <h4>Program Highlights:</h4>
+                        <ul>
+                            <li data-testid="text-highlight-1">Interactive workshops with international experts</li>
+                            <li data-testid="text-highlight-2">Survivor testimony sessions</li>
+                            <li data-testid="text-highlight-3">Pedagogical training in genocide education</li>
+                            <li data-testid="text-highlight-4">Networking with educators across the region</li>
+                            <li data-testid="text-highlight-5">Resource development and sharing</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="training-actions">
+                        <a href="https://bit.ly/3X5g72C" 
+                           class="btn btn-primary" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           data-testid="button-download-info">
+                            <i data-feather="download"></i>
+                            Download Info Pack
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSexGhMJ55XX5lw2uFRu4Tj0LYObEos5xFKAXmlhqp07AGAejQ/viewform" 
+                           class="btn btn-secondary" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           data-testid="button-apply-subsidy">
+                            <i data-feather="help-circle"></i>
+                            Apply for Subsidy
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="resources" id="resources">
+        <div class="container">
+            <h2 class="section-title" data-testid="text-resources-title">Educational Resources</h2>
+            <p class="section-description" data-testid="text-resources-description">
+                Access our comprehensive collection of educational materials, lesson plans, and multimedia resources designed to support Holocaust and genocide education.
+            </p>
+            
+            <div class="resources-grid">
+                <div class="resource-card" data-testid="card-resource-guides">
+                    <div class="resource-icon">
+                        <i data-feather="book-open"></i>
+                    </div>
+                    <h3 class="resource-title" data-testid="text-resource-title-guides">Teacher Guides</h3>
+                    <p class="resource-description" data-testid="text-resource-description-guides">
+                        Comprehensive lesson plans and teaching guides for different grade levels, aligned with curriculum requirements.
+                    </p>
+                </div>
+                
+                <div class="resource-card" data-testid="card-resource-multimedia">
+                    <div class="resource-icon">
+                        <i data-feather="video"></i>
+                    </div>
+                    <h3 class="resource-title" data-testid="text-resource-title-multimedia">Multimedia Content</h3>
+                    <p class="resource-description" data-testid="text-resource-description-multimedia">
+                        Video testimonies, documentary clips, and interactive presentations for classroom use.
+                    </p>
+                </div>
+                
+                <div class="resource-card" data-testid="card-resource-activities">
+                    <div class="resource-icon">
+                        <i data-feather="activity"></i>
+                    </div>
+                    <h3 class="resource-title" data-testid="text-resource-title-activities">Learning Activities</h3>
+                    <p class="resource-description" data-testid="text-resource-description-activities">
+                        Interactive activities, discussion prompts, and assessment tools to engage students in meaningful learning.
+                    </p>
+                </div>
+                
+                <div class="resource-card" data-testid="card-resource-research">
+                    <div class="resource-icon">
+                        <i data-feather="search"></i>
+                    </div>
+                    <h3 class="resource-title" data-testid="text-resource-title-research">Research Materials</h3>
+                    <p class="resource-description" data-testid="text-resource-description-research">
+                        Academic papers, historical documents, and research findings to support deeper understanding.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="resources-cta">
+                <a href="contact.html" class="btn btn-primary" data-testid="button-resources-access">
+                    <i data-feather="key"></i>
+                    Request Resource Access
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <h3 class="footer-title" data-testid="text-footer-title">Cape Town Holocaust & Genocide Centre</h3>
+                        <p class="footer-description" data-testid="text-footer-description">
+                            Creating a more caring and just society in which human rights and diversity are respected and valued.
+                        </p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4 class="footer-column-title" data-testid="text-footer-visit">Visit</h4>
+                            <ul class="footer-list">
+                                <li><a href="visit.html" data-testid="link-footer-hours">Opening Hours</a></li>
+                                <li><a href="visit.html#location" data-testid="link-footer-location">Location</a></li>
+                                <li><a href="visit.html#tours" data-testid="link-footer-tours">Guided Tours</a></li>
+                                <li><a href="visit.html#accessibility" data-testid="link-footer-accessibility">Accessibility</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4 class="footer-column-title" data-testid="text-footer-learn">Learn</h4>
+                            <ul class="footer-list">
+                                <li><a href="education.html" data-testid="link-footer-education">Education Programs</a></li>
+                                <li><a href="education.html#resources" data-testid="link-footer-resources">Resources</a></li>
+                                <li><a href="education.html#teacher-training" data-testid="link-footer-training">Teacher Training</a></li>
+                                <li><a href="about.html#archives" data-testid="link-footer-archives">Archives</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4 class="footer-column-title" data-testid="text-footer-connect">Connect</h4>
+                            <ul class="footer-list">
+                                <li><a href="events.html" data-testid="link-footer-events">Events</a></li>
+                                <li><a href="contact.html" data-testid="link-footer-contact">Contact Us</a></li>
+                                <li><a href="contact.html#newsletter" data-testid="link-footer-newsletter">Newsletter</a></li>
+                                <li><a href="contact.html#media" data-testid="link-footer-media">Media</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-credits">
+                        <p data-testid="text-footer-copyright">&copy; 2025 Cape Town Holocaust & Genocide Centre. All rights reserved.</p>
+                        <p class="project-credit" data-testid="text-footer-project">The Webpage Project by Small Tee</p>
+                        <p class="developer-credit" data-testid="text-footer-developer">T.E.A fussion made this</p>
+                        <p class="youtube-channel" data-testid="text-footer-youtube">
+                            <a href="https://www.youtube.com/@T.E.AFusionMusic" target="_blank" rel="noopener noreferrer" data-testid="link-footer-youtube">
+                                <i data-feather="youtube"></i> T.E.A Fusion Music
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        feather.replace();
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeNavigation();
+            initializeScrollEffects();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Cape Town Holocaust & Genocide Centre</title>
+    <meta name="description" content="Join our commemorative events, lectures, workshops, and community programs. Stay updated on upcoming events at the Cape Town Holocaust & Genocide Centre.">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <h1 class="brand-title">CTHGC</h1>
+                    <span class="brand-subtitle">The Webpage Project by Small Tee</span>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" data-testid="link-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link" data-testid="link-about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="visit.html" class="nav-link" data-testid="link-visit">Visit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="education.html" class="nav-link" data-testid="link-education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="events.html" class="nav-link active" data-testid="link-events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link" data-testid="link-contact">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-toggle" id="nav-toggle" data-testid="button-menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title" data-testid="text-page-title">Events</h1>
+            <p class="page-subtitle" data-testid="text-page-subtitle">
+                Join our commemorative events, lectures, and community programs throughout the year
+            </p>
+        </div>
+    </section>
+
+    <!-- Featured Events -->
+    <section class="featured-events" id="featured-events">
+        <div class="container">
+            <h2 class="section-title" data-testid="text-featured-title">Featured Events</h2>
+            
+            <div class="events-grid">
+                <!-- Educator Training Event -->
+                <article class="event-card featured" data-testid="card-event-training">
+                    <div class="event-image">
+                        <img src="https://ctholocaust.co.za/wp-content/uploads/2025/02/CTHGC-Teacher-training-July-2025-Poster-header-1024x701.jpg" 
+                             alt="Residential Educator Training Programme 2025" 
+                             loading="lazy"
+                             data-testid="img-event-training">
+                        <div class="event-badge">
+                            <span data-testid="text-event-badge-training">Featured</span>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date" data-testid="text-event-date-training">
+                            <i data-feather="calendar"></i>
+                            <span>July 13-18, 2025</span>
+                        </div>
+                        <h3 class="event-title" data-testid="text-event-title-training">Residential Educator Training Programme</h3>
+                        <p class="event-description" data-testid="text-event-description-training">
+                            An intensive professional development program for high school history educators from across Southern Africa and beyond, focusing on Holocaust and genocide education.
+                        </p>
+                        <div class="event-details">
+                            <div class="detail-item">
+                                <i data-feather="map-pin"></i>
+                                <span>Cape Town, South Africa</span>
+                            </div>
+                            <div class="detail-item">
+                                <i data-feather="users"></i>
+                                <span>History Educators</span>
+                            </div>
+                            <div class="detail-item">
+                                <i data-feather="clock"></i>
+                                <span>6 Days</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc0b1v8U30Yir3z9dvMTne2GRynYXNmUpSjWWEe8ND7vByQCg/viewform" 
+                               class="btn btn-primary" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               data-testid="button-apply-training">
+                                <i data-feather="edit"></i>
+                                Apply Now
+                            </a>
+                            <a href="https://bit.ly/3X5g72C" 
+                               class="btn btn-outline" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               data-testid="button-info-training">
+                                <i data-feather="info"></i>
+                                More Info
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Poland Journey Event -->
+                <article class="event-card" data-testid="card-event-poland">
+                    <div class="event-image">
+                        <img src="https://ctholocaust.co.za/wp-content/uploads/2024/08/Echos-of-post-memory-1-1024x588.jpg.webp" 
+                             alt="Echoes of Post Memory - Journey Through Jewish Poland" 
+                             loading="lazy"
+                             data-testid="img-event-poland">
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date" data-testid="text-event-date-poland">
+                            <i data-feather="calendar"></i>
+                            <span>July 2025</span>
+                        </div>
+                        <h3 class="event-title" data-testid="text-event-title-poland">Echoes of (Post)Memory: A Journey Through Jewish Poland</h3>
+                        <p class="event-description" data-testid="text-event-description-poland">
+                            A meaningful journey for descendants of Holocaust survivors and South Africa's Jewish community to explore Jewish heritage and historical sites across Poland.
+                        </p>
+                        <div class="event-details">
+                            <div class="detail-item">
+                                <i data-feather="map-pin"></i>
+                                <span>Poland</span>
+                            </div>
+                            <div class="detail-item">
+                                <i data-feather="users"></i>
+                                <span>Community Members</span>
+                            </div>
+                            <div class="detail-item">
+                                <i data-feather="clock"></i>
+                                <span>Multi-day Tour</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <a href="mailto:admin@holocaust.org.za?subject=Echoes%20of%20(Post)%20Memory%20-%20July%202025" 
+                               class="btn btn-primary"
+                               data-testid="button-interest-poland">
+                                <i data-feather="mail"></i>
+                                Express Interest
+                            </a>
+                            <a href="https://ctholocaust.co.za/wp-content/uploads/2025/03/Echoes-of-post-Memory-Info-Pack.pdf" 
+                               class="btn btn-outline" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               data-testid="button-info-poland">
+                                <i data-feather="download"></i>
+                                Download Info
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="upcoming-events" id="upcoming-events">
+        <div class="container">
+            <h2 class="section-title" data-testid="text-upcoming-title">Upcoming Events</h2>
+            
+            <div class="events-list">
+                <article class="event-item" data-testid="card-event-memorial">
+                    <div class="event-date-small">
+                        <div class="date-day">27</div>
+                        <div class="date-month">Jan</div>
+                    </div>
+                    <div class="event-info">
+                        <h4 class="event-title-small" data-testid="text-event-title-memorial">International Holocaust Remembrance Day</h4>
+                        <p class="event-time" data-testid="text-event-time-memorial">10:00 AM - 12:00 PM</p>
+                        <p class="event-description-small" data-testid="text-event-description-memorial">
+                            Annual commemoration ceremony with survivor testimonies, candle lighting, and community reflection.
+                        </p>
+                    </div>
+                    <div class="event-action">
+                        <a href="contact.html" class="btn btn-outline btn-small" data-testid="button-rsvp-memorial">
+                            <i data-feather="calendar-plus"></i>
+                            RSVP
+                        </a>
+                    </div>
+                </article>
+
+                <article class="event-item" data-testid="card-event-lecture">
+                    <div class="event-date-small">
+                        <div class="date-day">15</div>
+                        <div class="date-month">Feb</div>
+                    </div>
+                    <div class="event-info">
+                        <h4 class="event-title-small" data-testid="text-event-title-lecture">Genocide Prevention Lecture Series</h4>
+                        <p class="event-time" data-testid="text-event-time-lecture">6:00 PM - 8:00 PM</p>
+                        <p class="event-description-small" data-testid="text-event-description-lecture">
+                            Monthly lecture featuring international experts discussing contemporary genocide prevention strategies.
+                        </p>
+                    </div>
+                    <div class="event-action">
+                        <a href="contact.html" class="btn btn-outline btn-small" data-testid="button-register-lecture">
+                            <i data-feather="user-plus"></i>
+                            Register
+                        </a>
+                    </div>
+                </article>
+
+                <article class="event-item" data-testid="card-event-workshop">
+                    <div class="event-date-small">
+                        <div class="date-day">08</div>
+                        <div class="date-month">Mar</div>
+                    </div>
+                    <div class="event-info">
+                        <h4 class="event-title-small" data-testid="text-event-title-workshop">Educators' Workshop: Teaching Difficult Histories</h4>
+                        <p class="event-time" data-testid="text-event-time-workshop">9:00 AM - 4:00 PM</p>
+                        <p class="event-description-small" data-testid="text-event-description-workshop">
+                            Professional development workshop for educators on pedagogical approaches to teaching sensitive historical topics.
+                        </p>
+                    </div>
+                    <div class="event-action">
+                        <a href="contact.html" class="btn btn-outline btn-small" data-testid="button-book-workshop">
+                            <i data-feather="book"></i>
+                            Book
+                        </a>
+                    </div>
+                </article>
+
+                <article class="event-item" data-testid="card-event-exhibition">
+                    <div class="event-date-small">
+                        <div class="date-day">22</div>
+                        <div class="date-month">Mar</div>
+                    </div>
+                    <div class="event-info">
+                        <h4 class="event-title-small" data-testid="text-event-title-exhibition">Special Exhibition Opening: Voices of Resilience</h4>
+                        <p class="event-time" data-testid="text-event-time-exhibition">5:00 PM - 7:00 PM</p>
+                        <p class="event-description-small" data-testid="text-event-description-exhibition">
+                            Opening of new exhibition featuring stories of survival, resistance, and rebuilding after tragedy.
+                        </p>
+                    </div>
+                    <div class="event-action">
+                        <a href="contact.html" class="btn btn-outline btn-small" data-testid="button-attend-exhibition">
+                            <i data-feather="eye"></i>
+                            Attend
+                        </a>
+                    </div>
+                </article>
+
+                <article class="event-item" data-testid="card-event-dialogue">
+                    <div class="event-date-small">
+                        <div class="date-day">12</div>
+                        <div class="date-month">Apr</div>
+                    </div>
+                    <div class="event-info">
+                        <h4 class="event-title-small" data-testid="text-event-title-dialogue">Community Dialogue: Building Inclusive Societies</h4>
+                        <p class="event-time" data-testid="text-event-time-dialogue">2:00 PM - 4:00 PM</p>
+                        <p class="event-description-small" data-testid="text-event-description-dialogue">
+                            Interactive community discussion on promoting diversity, inclusion, and human rights in South Africa.
+                        </p>
+                    </div>
+                    <div class="event-action">
+                        <a href="contact.html" class="btn btn-outline btn-small" data-testid="button-join-dialogue">
+                            <i data-feather="message-circle"></i>
+                            Join
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Types -->
+    <section class="event-types" id="event-types">
+        <div class="container">
+            <h2 class="section-title" data-testid="text-types-title">Types of Events</h2>
+            
+            <div class="types-grid">
+                <div class="type-card" data-testid="card-type-commemorative">
+                    <div class="type-icon">
+                        <i data-feather="heart"></i>
+                    </div>
+                    <h3 class="type-title" data-testid="text-type-title-commemorative">Commemorative Events</h3>
+                    <p class="type-description" data-testid="text-type-description-commemorative">
+                        Annual remembrance ceremonies, memorial services, and community gatherings to honor victims and survivors of genocide.
+                    </p>
+                </div>
+
+                <div class="type-card" data-testid="card-type-educational">
+                    <div class="type-icon">
+                        <i data-feather="book-open"></i>
+                    </div>
+                    <h3 class="type-title" data-testid="text-type-title-educational">Educational Programs</h3>
+                    <p class="type-description" data-testid="text-type-description-educational">
+                        Workshops, seminars, and training programs for educators, students, and community members focused on human rights education.
+                    </p>
+                </div>
+
+                <div class="type-card" data-testid="card-type-cultural">
+                    <div class="type-icon">
+                        <i data-feather="music"></i>
+                    </div>
+                    <h3 class="type-title" data-testid="text-type-title-cultural">Cultural Events</h3>
+                    <p class="type-description" data-testid="text-type-description-cultural">
+                        Art exhibitions, film screenings, musical performances, and literary events that explore themes of memory and justice.
+                    </p>
+                </div>
+
+                <div class="type-card" data-testid="card-type-community">
+                    <div class="type-icon">
+                        <i data-feather="users"></i>
+                    </div>
+                    <h3 class="type-title" data-testid="text-type-title-community">Community Outreach</h3>
+                    <p class="type-description" data-testid="text-type-description-community">
+                        Mobile exhibitions, community dialogues, and outreach programs that bring our mission to diverse communities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="event-newsletter" id="event-newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title" data-testid="text-event-newsletter-title">Stay Updated on Events</h2>
+                <p class="newsletter-description" data-testid="text-event-newsletter-description">
+                    Subscribe to our events newsletter to receive early notifications about upcoming programs, special events, and registration opportunities.
+                </p>
+                
+                <form class="newsletter-form" id="events-newsletter-form" data-testid="form-events-newsletter">
+                    <div class="form-group">
+                        <input type="email" 
+                               id="events-newsletter-email" 
+                               name="email" 
+                               placeholder="Enter your email address" 
+                               required 
+                               data-testid="input-events-newsletter-email">
+                        <button type="submit" class="btn btn-primary" data-testid="button-events-newsletter-submit">
+                            <i data-feather="send"></i>
+                            Subscribe to Events
+                        </button>
+                    </div>
+                    <div class="form-message" id="events-newsletter-message" data-testid="text-events-newsletter-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <h3 class="footer-title" data-testid="text-footer-title">Cape Town Holocaust & Genocide Centre</h3>
+                        <p class="footer-description" data-testid="text-footer-description">
+                            Creating a more caring and just society in which human rights and diversity are respected and valued.
+                        </p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4 class="footer-column-title" data-testid="text-footer-visit">Visit</h4>
+                            <ul class="footer-list">
+                                <li><a href="visit.html" data-testid="link-footer-hours">Opening Hours</a></li>
+                                <li><a href="visit.html#location" data-testid="link-footer-location">Location</a></li>
+                                <li><a href="visit.html#tours" data-testid="link-footer-tours">Guided Tours</a></li>
+                                <li><a href="visit.html#accessibility" data-testid="link-footer-accessibility">Accessibility</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4 class="footer-column-title" data-testid="text-footer-learn">Learn</h4>
+                            <ul class="footer-list">
+                                <li><a href="education.html" data-testid="link-footer-education">Education Programs</a></li>
+                                <li><a href="education.html#resources" data-testid="link-footer-resources">Resources</a></li>
+                                <li><a href="education.html#teacher-training" data-testid="link-footer-training">Teacher Training</a></li>
+                                <li><a href="about.html#archives" data-testid="link-footer-archives">Archives</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-column">
+                            <h4 class="footer-column-title" data-testid="text-footer-connect">Connect</h4>
+                            <ul class="footer-list">
+                                <li><a href="events.html" data-testid="link-footer-events">Events</a></li>
+                                <li><a href="contact.html" data-testid="link-footer-contact">Contact Us</a></li>
+                                <li><a href="contact.html#newsletter" data-testid="link-footer-newsletter">Newsletter</a></li>
+                                <li><a href="contact.html#media" data-testid="link-footer-media">Media</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-credits">
+                        <p data-testid="text-footer-copyright">&copy; 2025 Cape Town Holocaust & Genocide Centre. All rights reserved.</p>
+                        <p class="project-credit" data-testid="text-footer-project">The Webpage Project by Small Tee</p>
+                        <p class="developer-credit" data-testid="text-footer-developer">T.E.A fussion made this</p>
+                        <p class="youtube-channel" data-testid="text-footer-youtube">
+                            <a href="https://www.youtube.com/@T.E.AFusionMusic" target="_blank" rel="noopener noreferrer" data-testid="link-footer-youtube">
+                                <i data-feather="youtube"></i> T.E.A Fusion Music
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+    
+    <script>
+        feather.replace();
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeNavigation();
+            initializeScrollEffects();
+            initializeForms();
+        });
+    </script>
+</body>
+</html>

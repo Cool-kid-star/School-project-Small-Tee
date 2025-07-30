@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Holocaust Memorial Museum</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Holocaust Memorial Museum</h1>
+    <nav>
+      <ul>
+        <li><a href="#history">History</a></li>
+        <li><a href="#visit">Visit</a></li>
+        <li><a href="#resources">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="history">
+    <h2>Understanding the Holocaust</h2>
+    <p>
+      The Holocaust was the systematic, state-sponsored persecution and murder of six million Jews
+      by the Nazi regime and its collaborators. It remains one of the darkest periods in human history.
+    </p>
+  </section>
+
+  <section id="visit">
+    <h2>Plan Your Visit</h2>
+    <p>
+      Visit the museum to learn more, view exhibits, and honor those lost. Open daily from 10AM to 5PM.
+    </p>
+  </section>
+
+  <section id="resources">
+    <h2>Educational Resources</h2>
+    <p>
+      For in-depth historical footage, click below:
+    </p>
+
+    <!-- Rickroll Button -->
+    <button onclick="playRick()">Learn More</button>
+
+    <!-- Hidden audio -->
+    <audio id="rickAudio" src="rickroll.mp3" preload="auto"></audio>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Holocaust Museum Project | Educational Use Only</p>
+  </footer>
+
+  <script>
+    function playRick() {
+      const audio = document.getElementById('rickAudio');
+      audio.currentTime = 45; // jump to 45 seconds into the song
+      audio.play();
+
+      // Open Rick Astley site in a new tab
+      window.open('https://rickastley.co.uk/', '_blank');
+    }
+  </script>
+</body>
+</html>
